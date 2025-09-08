@@ -35,5 +35,3 @@ def conversor_temperatura():
         print(f'[Conversor de Temperatura]: {temperatura}°K -> {calc_temp}°F.') 
     else:
         print('ERRO: Valor Inválido!') 
-
-conversor_temperatura()
