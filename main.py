@@ -1,5 +1,7 @@
 from calculadora import Calculadora
 from data_e_hora import mostrar_data_e_hora
+from conversor_temperatura import conversor_temperatura
+from gerador_de_senhas import gerar_senha
 
 nome_usuario = input('[CHAT]: Olá, qual seu nome? ').strip().capitalize()
 
@@ -25,10 +27,12 @@ if all(part.isalpha() for part in nome_usuario.split()):
                 
         case 3:
             # conversor_de_temperatura()
-            print('Conversor de temperatura')
+            conversor_temperatura()
         case 4:
             # gerador_de_senha()
-            print('Gerador de senha')
+            gerar_senha()
+            tamanho = int(input('Digite o tamanho da senha: '))
+            print(f'Senha gerada: {gerar_senha(tamanho)}')
         case 5:
             # frase_motivacional()
             print('Frase Motivacional')
